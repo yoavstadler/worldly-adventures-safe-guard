@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7385316679228432971}
   - component: {fileID: 7385316679228432975}
   - component: {fileID: 5627941388720827791}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -65,7 +65,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.1278234, y: 0.9148564, z: 1.1486344}
-  m_Center: {x: 0.06391168, y: 0.042571813, z: -0.011902362}
+  m_Center: {x: 0.06391168, y: 0.042571813, z: 0.01190236}
 --- !u!114 &7385316679228432971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 7385316679466432970}
   - component: {fileID: 7385316679466432972}
   - component: {fileID: 7385316679466432973}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: EnemyIdle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,7 +204,7 @@ GameObject:
   - component: {fileID: 7385316680368572959}
   - component: {fileID: 7385316680368573152}
   - component: {fileID: 7385316680368573153}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

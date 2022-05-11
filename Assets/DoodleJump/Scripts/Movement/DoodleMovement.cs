@@ -13,9 +13,11 @@ public class DoodleMovement : MonoBehaviour
 
     [HideInInspector] public CharacterController controller;
     [HideInInspector] public Vector3 move;
+    [HideInInspector] public bool powerUp;
 
     private PlayerControls playerInput;
     private Vector3 playerVelocity;
+    
 
     private void Awake()
     {
@@ -39,12 +41,21 @@ public class DoodleMovement : MonoBehaviour
     public void Move()
     {
         Vector2 movementInput = playerInput.Player.Move.ReadValue<Vector2>();;
-        move = new Vector3(movementInput.x * 1.5f, playerVelocity.y, 0f);
+        move = new Vector3(movementInput.x*1.5f, playerVelocity.y, 0f);
 
         Quaternion rotation = Quaternion.Euler(Vector3.zero);
         transform.rotation = rotation;
         
-        playerVelocity.y += gravityValue * Time.deltaTime;   
+        playerVelocity.y += gravityValue * Time.deltaTime;
+
+        if (GetComponent<PowerUp>().checkPowerUp())
+        {
+            powerUp=true;
+        }
+        else
+        {
+            powerUp = false;
+        }
     }
     private void FixedUpdate()
     {
@@ -65,14 +76,6 @@ public class DoodleMovement : MonoBehaviour
             scoreCoin += FindObjectOfType<Coin>().coinValue;
         }
     }
-    private void OnControllerColliderHit(ControllerColliderHit hit)
-    {
-        if(hit.gameObject.tag=="Enemy")
-        {
-            FindObjectOfType<GameManager>().RestartScene();
-        }
-    }
-
     public void KeepOnScreen()
     {
         Vector3 newPos = transform.position;

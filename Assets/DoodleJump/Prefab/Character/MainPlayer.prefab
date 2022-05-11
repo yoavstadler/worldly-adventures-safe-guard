@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7269252818789419231}
   - component: {fileID: 3255918931863784458}
   - component: {fileID: 6021969136843779570}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: MainPlayer
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -80,7 +80,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityValue: -9.81
-  playerSpeed: 5
+  playerSpeed: 7
   jumpHeight: 0.9
   layerMask:
     serializedVersion: 2
@@ -89,6 +89,7 @@ MonoBehaviour:
   scoreCoin: 0
   controller: {fileID: 0}
   move: {x: 0, y: 0, z: 0}
+  powerUp: 0
   powerUpJumpForce: 2
 --- !u!114 &6021969136843779570
 MonoBehaviour:
@@ -114,7 +115,7 @@ GameObject:
   - component: {fileID: 1263749039387284700}
   - component: {fileID: 1263749039387284699}
   - component: {fileID: 1263749039387284698}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: PlayerIdle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

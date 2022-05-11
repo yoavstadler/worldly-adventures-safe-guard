@@ -16,9 +16,9 @@ public class EnemyBlock : MonoBehaviour
 
     void Update()
     {
-        MoveEnemy();
+        MoveBlockEnemy();
     }
-    private void MoveEnemy()
+    private void MoveBlockEnemy()
     {
         if (MovingRight())
         {
@@ -41,5 +41,18 @@ public class EnemyBlock : MonoBehaviour
             newVelocity.x = newVelocity.x * (-1);
             rb.velocity = newVelocity;
         }
+        if (other.gameObject.tag == "Player")
+        {
+            if (FindObjectOfType<DoodleMovement>().powerUp)
+            {
+                Physics.IgnoreCollision(GetComponent<Collider>(), other,true);
+            }
+            else
+            {
+                Physics.IgnoreCollision(GetComponent<Collider>(), other,false);
+                FindObjectOfType<GameManager>().RestartScene();
+            }
+            Physics.IgnoreCollision(GetComponent<Collider>(), other, false);
+        }
     }
-    }
+ }

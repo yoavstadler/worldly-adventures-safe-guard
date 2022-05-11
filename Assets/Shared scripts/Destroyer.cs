@@ -16,7 +16,7 @@ public class Destroyer : MonoBehaviour
         }
         if (other.gameObject.tag == "Player")
         {
-            Destroy(other.gameObject);
+            FindObjectOfType<GameManager>().RestartScene();
         }
         if(other.gameObject.tag=="Coin")
         {

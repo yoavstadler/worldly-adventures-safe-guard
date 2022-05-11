@@ -269,7 +269,7 @@ PrefabInstance:
     - target: {fileID: 479403416565031561, guid: 09f6b4f371b272c4abea045a62f6f63c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.3
+      value: -1.84
       objectReference: {fileID: 0}
     - target: {fileID: 479403416565031561, guid: 09f6b4f371b272c4abea045a62f6f63c,
         type: 3}
@@ -279,7 +279,7 @@ PrefabInstance:
     - target: {fileID: 479403416565031561, guid: 09f6b4f371b272c4abea045a62f6f63c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 83.5
+      value: 28.29
       objectReference: {fileID: 0}
     - target: {fileID: 479403416565031561, guid: 09f6b4f371b272c4abea045a62f6f63c,
         type: 3}
@@ -400,7 +400,7 @@ PrefabInstance:
     - target: {fileID: 479403416565031561, guid: 09f6b4f371b272c4abea045a62f6f63c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.02
+      value: 1.98
       objectReference: {fileID: 0}
     - target: {fileID: 479403416565031561, guid: 09f6b4f371b272c4abea045a62f6f63c,
         type: 3}
@@ -410,7 +410,7 @@ PrefabInstance:
     - target: {fileID: 479403416565031561, guid: 09f6b4f371b272c4abea045a62f6f63c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 17.97
+      value: 28.39
       objectReference: {fileID: 0}
     - target: {fileID: 479403416565031561, guid: 09f6b4f371b272c4abea045a62f6f63c,
         type: 3}
@@ -1676,11 +1676,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: RunnerGameManager
       objectReference: {fileID: 0}
-    - target: {fileID: 8531499171640078944, guid: 202e0b5d90832514c917972b9ba8d126,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8531499171640078945, guid: 202e0b5d90832514c917972b9ba8d126,
         type: 3}
       propertyPath: m_RootOrder
@@ -1739,18 +1734,7 @@ PrefabInstance:
     - target: {fileID: 8531499171640078958, guid: 202e0b5d90832514c917972b9ba8d126,
         type: 3}
       propertyPath: chooseCharacter
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8531499171640078958, guid: 202e0b5d90832514c917972b9ba8d126,
-        type: 3}
-      propertyPath: characters.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8531499171640078958, guid: 202e0b5d90832514c917972b9ba8d126,
-        type: 3}
-      propertyPath: characters.Array.data[1]
-      value: 
-      objectReference: {fileID: 8756258992208370745, guid: 05afb4666d213b34a8a01ca99ddb42bd,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 202e0b5d90832514c917972b9ba8d126, type: 3}
